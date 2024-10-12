@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@keyframes fall {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(200px); /* Adjust this value to fit the jar */
+  }
+}
+
+.falling-fruit {
+  position: absolute;
+  animation-fill-mode: forwards; /* Keeps the end position of the animation */
+}
